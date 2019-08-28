@@ -7,17 +7,17 @@ public class vetores {
 		Scanner entrada = new Scanner(System.in);
 		System.out.print("Tamanho: ");
 		int x = entrada.nextInt();
-		System.out.print("Tamanho selecionado: " + x);
-		System.out.print("\n");
 		int vetor[] = new int[x];
+		System.out.print("Tamanho selecionado: " + x + "\n");
+		
 
 		for (int i=0; i<x; i++) {
-			System.out.print("Digite o Vetor "+i+":");
+			System.out.print("Digite o Vetor " + i + ": ");
 			vetor[i] = entrada.nextInt();
 		}
 
 		for (int i=0; i<x; i++) {
-			System.out.print("Vetor "+i+"="+vetor[i]+"\n");
+			System.out.print("Vetor " + i + ": " + vetor[i] + "\n");
 		}
 
 	}
