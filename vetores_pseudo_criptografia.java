@@ -4,15 +4,18 @@ public class vetores_pseudo_criptografia {
 
 	public static void main(String[] args) {
 
+		int x = 0;
 		Scanner entrada = new Scanner(System.in);
-		System.out.print("Informe um número maior que 10: ");
-		int x = entrada.nextInt();
+		do {
+			System.out.print("Informe um número maior que 9: ");
+			x = entrada.nextInt();
+		} while(x<10);
 
 		System.out.print("Tamanho selecionado: " + x + "\n");
 		String vetor[] = new String[x];
 
 		int n = x/2;
-		System.out.print("A metade é: "+n+"\n");
+		System.out.print("Informe uma frase com: "+n+"\n");
 
 		for (int i=0; i<x; i+=2) {
 			System.out.print("Informe a Palavra " + i + ": ");
