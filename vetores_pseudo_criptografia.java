@@ -15,7 +15,7 @@ public class vetores_pseudo_criptografia {
 		String vetor[] = new String[x];
 
 		int n = x/2;
-		System.out.print("Informe uma frase com: "+n+"\n");
+		System.out.print("Informe uma frase com " + n + " palavras\n");
 
 		for (int i=0; i<x; i+=2) {
 			System.out.print("Informe a Palavra " + i + ": ");
@@ -27,14 +27,14 @@ public class vetores_pseudo_criptografia {
 			vetor[i] = entrada.next();
 		}
 
-		System.out.print("A frase criptografada é : ");
+		System.out.print("\n A frase criptografada é: ");
 		for (int i=0; i<x; i++) {
-			System.out.print(vetor[i]+" ");
+			System.out.print(vetor[i] + " ");
 		}
 		
-		System.out.print("\nA frase descriptografada é : ");
+		System.out.print("\n A frase descriptografada é: ");
 		for (int i=0; i<x; i+=2) {
-			System.out.print(vetor[i]+" ");
+			System.out.print(vetor[i] + " ");
 		}
 
 	}
