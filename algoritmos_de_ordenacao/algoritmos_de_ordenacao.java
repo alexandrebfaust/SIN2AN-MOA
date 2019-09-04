@@ -1,6 +1,8 @@
+package aula3;
+
 import java.util.Scanner;
 
-public class bubble_sor {
+public class algoritmos_de_ordenacao {
 
 	public static void main(String[] args) {
 		
@@ -26,18 +28,8 @@ public class bubble_sor {
 		v.imprimir(vetor);
 		System.out.print("\n\n\n");
 
-		for(j=1;j<=n;j++){
-			// 0 1 2 3 4 -> 
-			for(i=0;i<n-1;i++){
-				y = vetor[j];
-				if(vetor[i]>)
-
-			}
-
-		}
-
-		for(i=0; i<x; i++){
-			for (j=0; j<(x-1); j++) {
+		for(int i=0; i<x; i++){
+			for (int j=0; j<(x-1); j++) {
 				if(vetor[j] > vetor[j+1]){
 					y = vetor[j];
 					vetor[j] = vetor[j+1];
@@ -48,7 +40,6 @@ public class bubble_sor {
 		}
 
 		System.out.print("Vetor ordenado: ");
-		Vetor v = new Vetor();
 		v.imprimir(vetor);
 
 	}
